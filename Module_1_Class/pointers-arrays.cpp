@@ -8,6 +8,7 @@ double findAverage(int arr[], int size);
 int findHighest(int arr[], int size);
 int findLowest(int arr[], int size);
 int getAmount();
+
 int main(){
 
   int menu;
@@ -15,7 +16,6 @@ int main(){
   do {
     cout << "1: Practice Arrays " << endl;
     cout << "2: Practice Pointers " << endl;
-    cout << "3: Practice Structs " << endl;
     cout << "0: Quit" << endl;
 
     cin >> menu;
@@ -23,7 +23,6 @@ int main(){
   switch (menu){
     case 1: practiceArrays(); break;
     case 2: practicePointers(); break;
-    case 3: practiceStructs(); break;
     case 0: break;
   };
   } while (menu > 0);
@@ -47,6 +46,7 @@ void practiceArrays(){
   cout << "The Lowest is: " << findLowest(numbers, size) << endl;
 
   delete []numbers;
+  numbers = nullptr;
 }
 
 void practicePointers(){
@@ -76,12 +76,6 @@ void practicePointers(){
 
 
 }
-
-void practiceStructs(){
-
-}
-
-
 
 
 
