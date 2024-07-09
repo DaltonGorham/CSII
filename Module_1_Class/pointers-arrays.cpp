@@ -2,7 +2,6 @@
 using namespace std;
 void practiceArrays();
 void practicePointers();
-void practiceStructs();
 int findSum(int arr[], int size);
 double findAverage(int arr[], int size);
 int findHighest(int arr[], int size);
