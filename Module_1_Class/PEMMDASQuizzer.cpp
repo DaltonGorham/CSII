@@ -8,6 +8,7 @@ Contains Modulus Quizzer and PEMMDAS Quizzer
 #include <cstdlib>
 #include <ctime>
 #include <vector>
+#include <string>
 using namespace std;
 
 
@@ -89,15 +90,39 @@ double modulusQuiz() {
 }
 
 double pemmdasQuiz() {
+    srand(time(0));
     int times;
     cout << "How many problems would you like to solve? ";
     cin >> times;
     
-    vector<int> numbers(9);
-    vector<int>
+    double answer;
+
+    string operators[5] = {"*", "/", "+", "-", "%"};
+    int numbers[9];
 
 
 
+    while(times > 0){
+    
+    for (int i = 0; i < 9; i++){
+        numbers[i] = rand() % 20;
+    }
+    
+    for (int i = 0; i < 9; i++){
+        cout << numbers[i] << " ";
+        if (i < 8) {
+        cout << operators[(rand() % 5 )] << " ";
+    }
+    }
+    cout << endl;
+    cout << "What is your answer? " << endl;
+    cin >> answer;
+    cout << "sorry no checking if you are right yet." << endl;
+
+
+    times--;
+    cout << endl;
+    }
     return 0;
 }
 
