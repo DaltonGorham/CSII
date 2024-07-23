@@ -65,6 +65,12 @@ int Time::getSeconds()const{
   return seconds;
 }
 
+int Time::getTimeinMinutes()const{
+  int tempMin = minutes + 60 * (hours + 24 * days);
+
+  return tempMin;
+}
+
 Time Time::operator+(Time& right){
 Time tempTime;
 tempTime.hours = this->hours + right.hours;

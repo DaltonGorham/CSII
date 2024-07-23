@@ -27,6 +27,7 @@ public:
   int getHours()const;
   int getMinutes()const;
   int getSeconds()const;
+  int getTimeinMinutes()const;
 
   friend ostream;
 };
