@@ -1,6 +1,7 @@
 #ifndef ParkedCar_H
 #define ParkedCar_H
 #include <iostream>
+#include <time.h>
 using namespace std;
 
 
@@ -10,7 +11,7 @@ private:
   int minutesParked;
 public:
   ParkedCar();
-  ParkedCar(string m,string mod,string c,string plate);
+  ParkedCar(string m,string mod,string c,string plate, int minParked);
   void setMinutesParked(int);
   string getMake()const;
   string getModel()const;

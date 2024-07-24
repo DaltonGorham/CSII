@@ -1,4 +1,4 @@
-#ifndef ParkingMater_H
+#ifndef ParkingMeter_H
 #define ParkingMeter_H
 
 class ParkingMeter{

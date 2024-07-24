@@ -4,8 +4,8 @@ using namespace std;
 
 
 ParkedCar::ParkedCar(){}
-ParkedCar::ParkedCar(string m, string mod, string c, string plate)
-: make(m), model(mod), color(c), licensePlate(plate)
+ParkedCar::ParkedCar(string m, string mod, string c, string plate,int minParked)
+: make(m), model(mod), color(c), licensePlate(plate), minutesParked(minParked)
 {}
 
 void ParkedCar::setMinutesParked(int min){
