@@ -12,6 +12,7 @@ private:
   PoliceOfficer officer;
   Time time;
 public:
+  ParkingTicket();
   ParkingTicket(ParkedCar c, PoliceOfficer po, double fine);
   void setFee(double fine);
   double getFee()const;
