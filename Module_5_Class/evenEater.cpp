@@ -19,3 +19,6 @@ string EvenEater:: eat(int num){
     throw OddFoodException();
   }
 }
+
+
+
